@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="DatabaseProgramming.Gamelib.GUI.MyGamesController"
+      spacing="10"
+      alignment="CENTER"
+      style="-fx-padding: 15;">
+
+    <!-- TITLE -->
+    <Label text="🎮 My Games"
+           styleClass="title" />
+
+    <!-- TABLE -->
+    <TableView fx:id="gameTable"
+               prefWidth="700"
+               prefHeight="600">
+
+    </TableView>
+
+</VBox>

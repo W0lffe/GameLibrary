@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="DatabaseProgramming.Gamelib.GUI.GameController"
+      spacing="10"
+      alignment="CENTER"
+      style="-fx-padding: 15;">
+
+    <!-- TITLE -->
+    <Label text="🎮 Add Game"
+           styleClass="title"
+           fx:id="titleLabel" />
+
+    <!-- GAME NAME -->
+    <Label text="Game Name" styleClass="label"/>
+    <TextField fx:id="gameNameField"
+   				maxWidth="250"
+               	promptText="Enter game name"/>
+               	
+     <!-- DEVELOPER -->
+    <Label text="Developer" styleClass="label"/>
+    <ComboBox fx:id="developerCombo"
+    			maxWidth="250"
+    			onAction="#handleDeveloperChange"/>
+    			
+   	<VBox fx:id="developerContainer"
+   			alignment="CENTER"/> 
+   			
+   	<!-- GENRE -->
+    <Label text="Genre" styleClass="label"/>
+    <ComboBox fx:id="genreCombo"
+    			maxWidth="250"
+    			onAction="#handleGenreChange"/>
+    			
+    <VBox fx:id="genreContainer" 
+    		alignment="CENTER"/> 
+
+    <!-- RELEASE YEAR -->
+    <Label text="Release Year" styleClass="label"/>
+    <TextField fx:id="releaseYearField"
+    			maxWidth="250"
+               	promptText="e.g. 2024"/>
+        
+    <!-- PLAYTIME -->      	     	
+    <Label text="Hours Played" styleClass="label"/>
+    <TextField fx:id="playtimeField"
+    			maxWidth="250"
+               	promptText="e.g 68"  />
+
+    <!-- RATING -->
+    <Label text="Rating" styleClass="label"/>
+    <ComboBox fx:id="ratingCombo"
+    			maxWidth="250" />
+			
+	<Label text="" fx:id="infoLabel" styleClass="label"/>
+	
+    <!-- SUBMIT BUTTON -->
+    <Button text="Add Game"
+            fx:id="submitButton"
+            onAction="#handleSubmit"
+            styleClass="button"/>
+
+</VBox>
